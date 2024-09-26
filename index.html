@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <h1 class="text-center font-bold text-lg lg:text-2xl my-6">Welcome to Weather App</h1>
+  <h1 class="text-center font-bold text-lg lg:text-2xl mt-2 lg:mt-6">Welcome to Weather App</h1>
 
 <div class="flex items-center justify-center flex-col space-y-14">
 
@@ -18,15 +19,15 @@
     </div>
 </div>
 
-    <div class="space-y-6 flex items-center justify-center flex-col space-y-14">
+    <div class="space-y-6 flex items-center justify-center flex-col">
 
     <button class="px-6 py-2 bg-[#2671fc] rounded-md text-white">Get Weather</button>
 
     <h1 class="text-xl font-medium hidden" id="warning"></h1>
 
-    <div class="hidden flex items-center justify-center flex-col space-y-10" id="itemsdiv" >
+    <div class="hidden flex items-center justify-center flex-col space-y-10 pb-10" id="itemsdiv" >
 
-    <div>
+    <div class="spacec-y-10">
         <div>
             <h1 class="text-2xl">Temp:</h1>
             <h1 id="temp" class="text-6xl font-medium"></h1>
@@ -38,20 +39,21 @@
         </div>
     </div>
 
-    <div class="flex items-center space-x-28">
+    <div class="lg:flex items-center lg:space-x-28 space-y-10 lg:space-y-0 text-center lg:text-left">
         <div>
             <h1 class="text-xl font-medium">Min. Temperature</h1>
             <h1 id="min"></h1>
         </div>
-
+    
         <div>
             <h1 class="text-xl font-medium">Max. Temperature</h1>
             <h1 id="max"></h1>
         </div>
-
     </div>
+    
+    
 
-    <div class="flex items-center space-x-28">
+    <div class="lg:flex items-center lg:space-x-28 space-y-10 lg:space-y-0 text-center lg:text-left">
         <div>
             <h1 class="text-xl font-medium">Sky</h1>
             <h1 id="sky"></h1>
