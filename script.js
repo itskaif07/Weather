@@ -1,4 +1,4 @@
-const input = document.querySelector("#cityInput");  // Now select the input field
+const input = document.querySelector("#cityInput"); 
 const apiKey = "0acf0cf7c09035ada45a67a735ae1cfd";
 const button = document.querySelector("button");
 const warning  =  document.querySelector("#warning")
@@ -61,7 +61,7 @@ async function weather(params) {
     }
      catch (error) {
         warning.classList.remove('hidden');
-        warning.innerHTML = error.message; // Show the error message to the user
+        warning.innerHTML = error.message; 
         return;
     }
 }
