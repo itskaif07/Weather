@@ -1,5 +1,5 @@
 const input = document.querySelector("#cityInput"); 
-const apiKey = "0acf0cf7c09035ada45a67a735ae1cfd";
+const apiKey = "51b279f2f4bd4d3d0f6718e8d1651fd6";
 const button = document.querySelector("button");
 const warning  =  document.querySelector("#warning")
 const itemsdiv  =  document.querySelector("#itemsdiv")
